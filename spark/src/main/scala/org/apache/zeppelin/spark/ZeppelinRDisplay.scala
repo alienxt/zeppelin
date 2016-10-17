@@ -36,7 +36,7 @@ object ZeppelinRDisplay {
   val pattern = new Regex("""^ *\[\d*\] """)
 
   def render(html: String, imageWidth: String): RDisplay = {
-
+    println("hello")
     val document = Jsoup.parse(html)
     document.outputSettings().prettyPrint(false)
 
